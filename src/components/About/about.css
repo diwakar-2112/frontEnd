@@ -1,0 +1,182 @@
+/* .ap__whatap {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 50px 0px 50px;
+    padding: 2rem;
+    background: var(--color-footer);
+    
+    background: -moz-radial-gradient(circle at 30% -100%, #8d3b7c 25%, rgba(141, 59, 124, 1) 70%, rgba(179, 85, 155, 1) 100%);
+    background: -webkit-radial-gradient(circle at 30% -100%, #8d3b7c 25%, rgba(141, 59, 124, 1) 70%, rgba(179, 85, 155, 1) 100%);
+    background: -o-radial-gradient(circle at 30% -100%, #8d3b7c 25%, rgba(141, 59, 124, 1) 70%, rgba(179, 85, 155, 1) 100%);
+    background: -ms-radial-gradient(circle at 30% -100%, #8d3b7c 25%, rgba(141, 59, 124, 1) 70%, rgba(179, 85, 155, 1) 100%);
+    background: radial-gradient(circle at 30% -100%, #8d3b7c 25%, rgba(141, 59, 124, 1) 70%, rgba(179, 85, 155, 1) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ap__whatap-feature {
+    display: flex;
+}
+
+
+.ap__whatap-feature .ap__features-container__feature {
+    margin: 0;
+}
+
+
+.ap__whatap-feature .ap__features-container_feature-text {
+    max-width: 700px;
+}
+
+.ap__whatap-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 2rem 0 2rem;
+}
+
+.ap__whatap-heading h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 510px;
+    margin-left: 4vh;
+    margin-right: 12vh;
+}
+
+.blisful{
+    color: gainsboro ;
+}
+
+.ap__whatap-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 5%;
+    color: pink;
+    cursor: pointer;
+    
+}
+
+.ap__whatap-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+
+.ap__whatap-container .ap__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+
+.ap__whatap-container .ap__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .ap__whatap-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .ap__whatap-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+   
+    .ap__whatap-feature .ap__features-container__feature {
+        flex-direction: column;
+    }
+
+    
+    .ap__whatap-feature .ap__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .ap__whatap-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    
+    .ap__whatap-container .ap__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+} */
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #dad0dca7;
+    margin-top: 70px;
+  }
+  
+  .services-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .services-title::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #62087b; 
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    width: 20%;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .service-icon {
+    font-size: 40px;
+    color: #800496; 
+  }
+  
+  .service-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .service-item p {
+    font-size: 14px;
+    color: #1a1b1c; 
+  }
+  
+  @media (max-width: 768px) {
+    .service-item {
+      width: 45%; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-item {
+      width: 100%; 
+    }
+  }

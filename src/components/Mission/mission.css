@@ -1,0 +1,121 @@
+.miss_ {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px 0px 50px 0px;
+    padding: 2rem;
+    background: var(--color-footer);
+    /* ff 3.6+ */
+  /* Firefox 3.6+, Safari 5.1+, Chrome 10+, Opera 11.10+, IE 10+, Global 92%+ support */
+/* Firefox 3.6+, Safari 5.1+, Chrome 10+, Opera 11.10+, IE 10+, Global 92%+ support */
+background: -moz-radial-gradient(circle at 30% -100%, #8d3b7c 25%, rgba(141, 59, 124, 1) 70%, rgba(179, 85, 155, 1) 100%);
+background: -webkit-radial-gradient(circle at 30% -100%, #8d3b7c 25%, rgba(141, 59, 124, 1) 70%, rgba(179, 85, 155, 1) 100%);
+background: -o-radial-gradient(circle at 30% -100%, #8d3b7c 25%, rgba(141, 59, 124, 1) 70%, rgba(179, 85, 155, 1) 100%);
+background: -ms-radial-gradient(circle at 30% -100%, #8d3b7c 25%, rgba(141, 59, 124, 1) 70%, rgba(179, 85, 155, 1) 100%);
+background: radial-gradient(circle at 30% -100%, #8d3b7c 25%, rgba(141, 59, 124, 1) 70%, rgba(179, 85, 155, 1) 100%);
+
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.miss_feature {
+    display: flex;
+}
+
+/* Customizing feature component as per needs */
+.miss_feature {
+    margin: 0;
+}
+
+/* Customizing feature component as per needs */
+.miss_feature  {
+    max-width: 700px;
+}
+
+.miss_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 2rem 0 2rem;
+}
+
+.miss_heading h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 510px;
+    margin-left: 4vh;
+    margin-right: 20vh;
+}
+
+.miss_heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: pink;
+    cursor: pointer;
+    margin-right: 2vh;
+    /* margin-top: -10vh; */
+}
+
+.miss__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.miss__container {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.miss__container {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .miss_heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .miss_heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .miss_feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .miss_feature {
+        margin-top: 0.5rem;
+    }
+
+    .miss_heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .miss__container {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

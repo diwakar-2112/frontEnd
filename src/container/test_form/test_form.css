@@ -1,0 +1,187 @@
+.Test_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 99vh;
+    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    margin-top: -5vh;
+  }
+  
+
+  
+  .test_section {
+    max-width: 32vw;
+    width: 100%;
+    border-radius: 7px;
+    /* padding: 4vh; */
+    background-color: #ffffff;
+    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.5);
+    
+  }
+  
+  .formbg-outer {
+    /* background-color: #ede1f8; */
+    /* padding: 4vh; */
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 1000;
+  }
+  
+  .formbg {
+    background-color: #ffffff;
+    padding: 5vh;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 1000;
+  }
+  
+  .formbg-inner {
+    max-width: 24vw;
+    margin: 0 auto;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  #stripe-login {
+    display: grid;
+    grid-gap: 1.6vw;
+  }
+  
+  .form_head {
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  
+  .form_head h1 {
+    font-size: 4vh;
+    color: #333333;
+  }
+  
+  .field {
+    display: grid;
+    grid-gap: 1vh;
+  }
+  
+  .field label {
+    font-size: 2vh;
+    color: #333333;
+  }
+  
+  .field input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 2.4vh;
+  }
+  
+  .field input[type="submit"] {
+    max-width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #8d3b7c;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 4vh;
+    transition: background-color 0.3s ease;
+  }
+  
+  .field input[type="submit"]:hover {
+    background-color: #8d3b7c;
+    
+  }
+  
+  .field input {
+    transition: all 0.3s ease; /* Add smooth transitions */
+  }
+  
+  .field input:hover {
+    border-color: #8d3b7c;
+  }
+  
+  .field input:focus {
+    border-color: #8d3b7c;
+    box-shadow: 0 0 7px #9b9b9b;
+  }
+  
+  .field input::placeholder {
+    color: #A9A9A9;
+    font-style: italic;
+    transition: color 0.3s ease, font-style 0.3s ease; /* Smooth transitions for placeholder */
+  }
+  
+  .field.dropdown {
+    display: grid;
+    grid-gap: 1vh;
+  }
+  
+  .field.dropdown label {
+    font-size: 2vh;
+    color: #333333;
+  }
+  
+  .field.dropdown select {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 2.4vh;
+    background-color: transparent; /* Make the background transparent */
+    appearance: none; /* Remove default appearance */
+  }
+  
+  .field.dropdown select:focus {
+    outline: none; /* Remove outline when focused */
+    border-color: #555555; /* Change border color on focus */
+    box-shadow: 0 0 7px #b4b4b4; /* Add box shadow on focus */
+  }
+  
+  .field.dropdown select option {
+    background-color: #ffffff; /* Set background color for options */
+    color: #333333; /* Set text color for options */
+  }
+  
+  /* Responsive */
+  @media only screen and (max-width: 768px) {
+    .test_section {
+      max-width: 90vw;
+    }
+  
+    .formbg-inner {
+      max-width: 90vw;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .test_section {
+      padding: 2vh;
+    }
+  
+    .formbg-outer {
+      padding: 2vh;
+    }
+  
+    .formbg {
+      padding: 3vh;
+    }
+  
+    .formbg-inner {
+      max-width: 90vw;
+    }
+  
+    .form_head h1 {
+      font-size: 20px;
+    }
+  
+    .field input {
+      font-size: 14px;
+    }
+  
+    .field input[type="submit"] {
+      font-size: 18px;
+    }
+  }
+  

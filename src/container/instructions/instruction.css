@@ -1,0 +1,103 @@
+/* instruction.css */
+
+.Instruction {
+    max-width: 600px;
+    margin: 0 auto;
+    
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user_inst_heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .user_instructions {
+    font-size: 16px;
+  }
+  
+  .user_instructions ol {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .user_instructions li {
+    margin-bottom: 15px;
+  }
+  
+  .user_instructions li strong {
+    color: #8d3b7c; /* Blue color for strong text */
+  }
+  
+ /* instruction.css */
+
+/* instruction.css */
+
+.continue-checkbox-container {
+    margin-top: 40px;
+    margin-left: 33vw;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: row;
+  }
+  
+  .continue-checkbox-container input[type="checkbox"] {
+    display: none;
+  }
+  
+  .continue-checkbox-container label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .continue-checkbox-container label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 5px; /* Increased left margin */
+    border: 2px solid #8d3b7c;
+    border-radius: 3px;
+  }
+  
+  .continue-checkbox-container input[type="checkbox"]:checked + label:before {
+    background-color: #8d3b7c;
+    border-color: #8d3b7c;
+  }
+  
+  .continue-checkbox-container label:after {
+    content: "\u2713";
+    font-size: 16px;
+    color: #fff;
+    display: none;
+  }
+  
+  .continue-checkbox-container input[type="checkbox"]:checked + label:after {
+    display: inline-block;
+  }
+  body {
+    margin-top: 40px; /* Adjust the value as needed */
+  }
+  
+  .next_btn_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .next_btn{
+    border: 2px solid #8d3b7c;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #8d3b7c;
+    color: white;
+    padding: 1vh 2vh;
+    font-size: 2vh;
+  }

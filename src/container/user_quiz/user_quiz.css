@@ -1,0 +1,535 @@
+/* .User_quiz {
+  margin-top: 8vh;
+  padding: 4vh;
+  width: 80%;
+  margin: 12%;
+  margin-top: 8vh;
+}
+
+.user_main_heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 4vh;
+  background-color: #8d3b7c;
+  padding: 4vh; 
+  font-weight: 600;
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  font-size: 3.6vh; 
+  color: #fff; 
+  text-transform: uppercase; 
+}
+
+
+.user_quiz_inner {
+  margin: 12vh;
+  margin-top: 4vh;
+  padding: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user_left {
+  padding: 2vh;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.test_heading {
+  font-size: 2.6vh;
+  font-weight: bold;
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+}
+
+.all_tests {
+  width: 100%;
+}
+
+.test_list {
+  width: 74vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vh;
+  background-color: #f7f7f7;
+  margin-bottom: 1vh;
+  border-radius: 5px;
+}
+
+.test_name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.test_attempt button {
+  padding: 8px 16px;
+  background-color: #8d3b7c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 4vh;
+  transition: background-color 0.3s ease;
+}
+
+.test_attempt button:hover {
+  background-color: #ad69f5;
+}
+
+.user_right {
+  flex: 1;
+  padding: 2vh;
+  margin-left: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.user_inst_heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.user_instructions {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.user_right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.user_inst_heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.user_instructions {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.user_instructions ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.user_instructions ol li {
+  margin-bottom: 10px;
+}
+
+
+
+ */
+
+
+ .User_quiz {
+  font-family: Arial, sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+  max-width: 60vw;
+  /* margin: 8% auto; */
+  margin-left: 20%;
+  margin-top: 6%;
+  padding: 8vh 10vh 10vh 10vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* background-image: linear-gradient(to top, #eff4ff 0%, #e1ebf8 100%); */
+  background-image: linear-gradient(10deg, #eaeff6 0%, #c3cfe2 100%);
+  
+}
+/* .user_body {
+  
+} */
+.user_main_heading {
+  font-size: 4vh;
+  font-weight: bold;
+  margin-bottom: 6vh;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+}
+
+.user_quiz_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user_left {
+  width: 100%;
+}
+
+.category_select,
+.sort_select,
+.search_input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-style: none;
+  /* border-bottom: 2px #8d3b7c; */
+  /* border: 0 0 1px 0 solid #ddd; */
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  margin-bottom: 4vh;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+.search_drop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2vh;
+  
+  /* margin-bottom: 1vh; */
+}
+
+.search_input {
+  margin-bottom: 4vh;
+  flex: 3;
+}
+
+.sort_select {
+  flex: 1;
+}
+.all_tests {
+  width: 100%;
+  background-color: #fff;
+  /* margin-top: 1vh; */
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.test_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-left: 2vh;
+  margin-right: 1.6vw;
+  padding: 1.8vh 1vw;
+}
+
+.test_name {
+  font-weight: bold;
+  color: #555;
+}
+
+.attempt {
+  padding: 10px 20px;
+  background-color: #8d3b7c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.attempt:hover {
+  background-color: #8d3b7c;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  margin-top: 4vh;
+}
+
+.pagination li {
+  margin-right: 10px;
+}
+
+.pagination li a {
+  padding: 10px 20px;
+  background-color: #8d3b7c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination li a:hover {
+  background-color: #8d3b7c;
+}
+
+
+.search_input {
+  width: 40vw;
+  margin-right: 1vw;
+  margin-left: 0vw;
+  padding: 14px; 
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 16px;
+  position: relative; /* Position relative to accommodate search icon */
+}
+
+.sort_select {
+  padding: 10px; 
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .user_quiz_inner {
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vh;
+  }
+  .user_main_heading {
+    font-size: 3vh;
+  }
+
+  .test_heading {
+    font-size: 2.6vh;
+  }
+
+  .test_list {
+    padding: 10px;
+    font-size: 2vh;
+  }
+
+  .test_list p {
+    font-size: 2vh;
+  }
+  .all_tests {
+    width: 80%;
+    font-size: 2vh;
+  }
+  
+  .test_list {
+    width: 28vh;
+    margin-bottom: 2vh;
+    font-size: 2vh;
+  }
+
+  .user_left,
+  .user_right {
+    width: 100%;
+    padding: 2vh;
+    margin-left: 0;
+    font-size: 2vh;
+  }
+
+  .test_list {
+    flex-direction: row;
+    width: 40vh;
+  }
+
+  .test_name {
+    font-size: 1.8vh;
+  }
+
+  .test_attempt button {
+    padding: 6px 12px;
+    font-size: 1.8vh;
+  }
+
+  .test_attempt button {
+    width: 100%;
+  }
+
+  .user_instructions {
+    font-size: 2vh;
+  }
+}
+@media (max-width: 768px) {
+  .user_quiz_inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user_left,
+  .user_right {
+    width: 100%;
+    padding: 2vh;
+    margin-left: 0;
+  }
+
+  .test_list {
+    flex-direction: row;
+    width: 40vh;
+  }
+
+  .test_attempt button {
+    width: 100%;
+  }
+
+  .test_name {
+    font-size: 16px;
+  }
+
+  .test_attempt button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .user_quiz_inner {
+    margin: 2vh;
+  }
+
+  .test_heading {
+    font-size: 20px;
+  }
+  .all_tests {
+    width: 80%;
+  }
+
+  .test_list {
+    padding: 10px;
+    width: 28vh;
+  }
+
+  .test_name {
+    font-size: 16px;
+  }
+
+  .test_attempt button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .user_inst_heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .user_instructions {
+    font-size: 14px;
+  }
+
+  .user_instructions ol {
+    padding-left: 10px;
+  }
+
+  .user_instructions ol li {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .user_quiz_inner {
+    margin: 2vh;
+  }
+
+  .user_main_heading {
+    font-size: 3vh;
+  }
+
+  .test_heading {
+    font-size: 20px;
+  }
+
+  .test_list {
+    padding: 10px;
+  }
+  .all_tests {
+    width: 80%;
+  }
+  
+  .test_list {
+    width: 28vh;
+    margin-bottom: 2vh;
+  }
+  .test_name {
+    font-size: 16px;
+  }
+
+  .test_attempt button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .user_inst_heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .user_instructions {
+    font-size: 14px;
+  }
+
+  .user_instructions ol {
+    padding-left: 10px;
+  }
+
+  .user_instructions ol li {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 430px) {
+  .user_quiz_inner {
+    margin: 2vh;
+  }
+  .user_main_heading {
+    font-size: 3vh;
+  }
+  .test_heading {
+    font-size: 20px;
+  }
+
+  .test_list {
+    padding: 10px;
+  }
+  .all_tests {
+    width: 80%;
+  }
+  
+  .test_list {
+    width: 25vh;
+    margin-bottom: 2vh;
+   
+  }
+  .test_name {
+    font-size: 16px;
+  }
+
+  .test_attempt button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .user_inst_heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .user_instructions {
+    font-size: 14px;
+  }
+
+  .user_instructions ol {
+    padding-left: 10px;
+  }
+
+  .user_instructions ol li {
+    margin-bottom: 8px;
+  }
+}
+

@@ -1,0 +1,76 @@
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 14vh;
+    background-color: #f8f9fa; /* Light background */
+}
+
+.error_img {
+    height: 50vh;
+    width: 52vh;
+    position: fixed;
+    margin-top: -42vh;
+    margin-left: 12vh;
+    border-radius: 0px 0px 200px 200px;
+}
+
+.error-container {
+    max-width: 600px;
+    width: 90%;
+}
+
+.error-content {
+    text-align: center;
+    padding: 40px;
+    margin-top: 10vh;
+    background-color: #dfd4d4; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for smooth effect */
+}
+
+.error-content:hover {
+    transform: scale(1.05); /* Slightly enlarge the element */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    background-color: #f4cfcf; /* Change background color on hover */
+}
+
+.error-heading-container {
+    margin-bottom: 20px;
+}
+
+.error-heading {
+    font-size: 36px;
+    color: #dc3545; /* Red color for error message */
+}
+
+.error-text-container {
+    margin-bottom: 30px;
+}
+
+.error-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.error-link {
+    color: #007bff; /* Blue color for link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.error-image-container {
+    margin-top: 30px;
+}
+
+.error-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for the image */
+}

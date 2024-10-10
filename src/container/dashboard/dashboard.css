@@ -1,0 +1,270 @@
+.dashboard {
+    margin-top: 12vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    font-family: sans-serif;
+    font-weight: 100;
+    background-color: var(--color-footer);
+}
+
+.dash_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user_dashboard {
+    flex: 1;
+    padding: 2vh;
+    border-radius: 10px;
+    padding-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+.user_assignment {
+    flex: 2.6;
+    /* height: 100%; */
+    border-radius: 10px;
+}
+
+.user_details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1vh;
+    padding: 3vh;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-image: #8d3b7c;
+}
+
+
+.user_name {
+    font-size: 3.6vh;
+    /* padding-top: 1vh; */
+    font-family: var(--font-family);
+    font-weight: 600;
+    /* font-family: Josefin Sans, sans-serif; */
+    /* padding-bottom: 1vh; */
+}
+
+.user_class {
+    font-size: 1.8vh;
+    font-weight: 500;
+    color: rgb(97, 93, 93);
+}
+
+/* .update_profile {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #a25bef;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+} */
+
+.user_stats {
+    margin: 1vh;
+    margin-top: 4vh;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+
+.stat_heading {
+    padding: 2vh;
+    padding-left: 5vh;
+    padding-right: 4vh;
+    /* text-align: center; */
+}
+
+.stat_details {
+    line-height: 3.2vh;
+    text-align: left;
+    /* margin-left: 4vh; */
+    padding: 5vh;
+    padding-top: 0;
+    padding-bottom: 4vh;
+}
+
+.topic_heading {
+    padding: 1vh;
+    padding-left: 5vh;
+    padding-right: 4vh;
+    padding-top: 0;
+}
+
+.topic_details {
+    padding: 5vh;
+    padding-top: 1vh;
+    line-height: 3.2vh;
+}
+
+.user_assignment {
+    margin-top: 7vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    margin-bottom: 6vh;
+}
+
+.assign_section {
+    margin: 2vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    padding: 2vh;
+}
+
+.assign_heading {
+    font-family: var(--font-family);
+    padding-bottom: 4vh;
+    color: white;
+}
+
+.gradient_color {
+    /* background-image: linear-gradient(to bottom, #09203f 0%, #3c576c 100%); */
+
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    z-index: 10;
+    color: whitesmoke;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 2.2vh;
+    background-color: rgba(216, 155, 251, 0.2);
+    color: #fff;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+    /* backdrop-filter: blur(18px); */
+    /* -webkit-backdrop-filter: blur(18px); */
+}
+
+thead th {
+    background-color: #8d3b7c;
+}
+
+tbody tr:hover {
+    background-color: #8d3b7c;
+}
+
+tbody td {
+    position: relative;
+}
+
+tbody td:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+    .dashboard {
+        margin-top: 10vh;
+        margin-left: 1vh;
+        margin-right: 1vh;
+    }
+
+    .user_dashboard {
+        padding: 1.4vh;
+        margin-left: 5vh;
+        margin-right: 1vh;
+    }
+
+    .user_pic {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .user_name {
+        font-size: 3vh;
+    }
+
+    .user_class {
+        font-size: 1.5vh;
+    }
+
+    .user_rank {
+        font-size: 1.8vh;
+    }
+
+    .update_profile {
+        margin-top: 1vh;
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+
+    .user_stats {
+        margin-top: 2vh;
+        font-size: 2vh;
+    }
+
+    .stat_heading {
+        padding: 1.5vh;
+        padding-left: 3vh;
+        padding-right: 2vh;
+    }
+
+    .stat_details {
+        padding: 3vh;
+    }
+
+    .topic_heading {
+        padding: 1vh;
+        padding-left: 3vh;
+        padding-right: 2vh;
+    }
+
+    .topic_details {
+        padding: 3vh;
+        padding-top: 1vh;
+    }
+
+    .assign_section {
+        margin: 1vh;
+        margin-left: 2vh;
+        padding: 3vh;
+    }
+
+    .assign_heading {
+        font-size: 2vh;
+    }
+}
