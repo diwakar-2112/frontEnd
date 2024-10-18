@@ -57,7 +57,7 @@ function Admin() {
     navigator("/test_form");
   }
 
-  console.log(Data);
+  console.log('data is',Data);
 
   return (
     <div className="Admin main">
@@ -80,10 +80,10 @@ function Admin() {
               {Data.length === 0 ? (
                 <p>Loading....</p>
               ) : (
-                Data.map((test) => (
+                Data.map((test,index) => (
                   <li class="table-row num h3 " key={parseInt(test.id)}>
                     <div class="col col-1" data-label="Id">
-                      {test.id}
+                      {index+1}
                     </div>
                     <div class="col col-2" data-label="Name">
                       {test.tag}

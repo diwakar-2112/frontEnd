@@ -45,8 +45,11 @@ function User_quiz() {
 
   const sortedTests = [...currentTests].sort((a, b) => {
     if (sortBy === "name") {
+      console.log(['this is what i ',...currentTests]);
       return a.tag.localeCompare(b.tag);
+      
     } else {
+      console.log(['this is what i ',...currentTests])
       return a.id - b.id;
     }
   });
@@ -72,6 +75,7 @@ function User_quiz() {
         .catch(error => {
           console.error(`There was a problem fetching ${category} tests data:`, error);
           return { [category]: [] };
+          
         });
     });
 
